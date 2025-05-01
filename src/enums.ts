@@ -4,6 +4,7 @@
 // const medium=2;
 // const large =3;
 
-enum Size{Small=0, Medium, Large};
+const enum Size{Small=0, Medium, Large};
 let mySize: Size=Size.Medium;
 console.log(mySize);
+// using const shall generate more optimized js code
