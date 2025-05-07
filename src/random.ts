@@ -1,6 +1,5 @@
 // inspirationGenerator.ts
-
-type Mood = "🔥 Bold" | "🌿 Calm" | "💡 Insightful" | "🎯 Focused" | "🌈 Uplifting";
+type Mood = " Bold" | "🌿 Calm" | " Insightful" | " Focused" | " Uplifting";
 
 interface Quote {
   text: string;
@@ -17,22 +16,22 @@ const quotes: Quote[] = [
   {
     text: "Stay hungry, stay foolish.",
     author: "Steve Jobs",
-    mood: "🔥 Bold",
+    mood: " Bold",
   },
   {
     text: "Simplicity is the ultimate sophistication.",
     author: "Leonardo da Vinci",
-    mood: "🌿 Calm",
+    mood: " Calm",
   },
   {
     text: "You miss 100% of the shots you don’t take.",
     author: "Wayne Gretzky",
-    mood: "🎯 Focused",
+    mood: " Focused",
   },
   {
     text: "Every day is a fresh start.",
     author: "Unknown",
-    mood: "🌈 Uplifting",
+    mood: " Uplifting",
   }
 ];
 
@@ -42,7 +41,7 @@ function getRandomQuote(): Quote {
 }
 
 function displayQuote(quote: Quote): void {
-  console.log(`\n✨ Mood: ${quote.mood}`);
+  console.log(`\n Mood: ${quote.mood}`);
   console.log(`"${quote.text}"`);
   console.log(`— ${quote.author}\n`);
 }

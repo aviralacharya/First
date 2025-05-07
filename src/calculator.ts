@@ -17,14 +17,14 @@ async function main() {
   )).toLowerCase();
 
   if (!["add", "subtract", "multiply", "divide"].includes(operation)) {
-    console.log("❌ Invalid operation.");
+    console.log(" Invalid operation.");
     rl.close();
     return;
   }
 
   const count = parseInt(await askQuestion("How many numbers? "));
   if (isNaN(count) || count < 2) {
-    console.log("❌ You must enter at least 2 numbers.");
+    console.log(" You must enter at least 2 numbers.");
     rl.close();
     return;
   }
@@ -33,14 +33,14 @@ async function main() {
   for (let i = 0; i < count; i++) {
     const num = parseFloat(await askQuestion(`Enter number ${i + 1}: `));
     if (isNaN(num)) {
-      console.log("❌ Invalid number.");
+      console.log(" Invalid number.");
       rl.close();
       return;
     }
     numbers.push(num);
   }
 
-  let result = 0; // ✅ Fix: Initial assignment
+  let result = 0; //Fix: Initial assignment
 
   switch (operation) {
     case "add":
@@ -57,7 +57,7 @@ async function main() {
       break;
   }
 
-  console.log(`✅ Result: ${result}`);
+  console.log(`Result: ${result}`);
   rl.close();
 }
 
