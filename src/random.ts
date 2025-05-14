@@ -1,5 +1,5 @@
 // inspirationGenerator.ts
-type Mood = " Bold" | "🌿 Calm" | " Insightful" | " Focused" | " Uplifting";
+type Mood = " Bold" | "Calm" | " Insightful" | " Focused" | " Uplifting";
 
 interface Quote {
   text: string;
@@ -11,7 +11,7 @@ const quotes: Quote[] = [
   {
     text: "The best way to predict the future is to invent it.",
     author: "Alan Kay",
-    mood: "💡 Insightful",
+    mood: " Insightful",
   },
   {
     text: "Stay hungry, stay foolish.",
@@ -21,7 +21,7 @@ const quotes: Quote[] = [
   {
     text: "Simplicity is the ultimate sophistication.",
     author: "Leonardo da Vinci",
-    mood: " Calm",
+    mood : "Calm",
   },
   {
     text: "You miss 100% of the shots you don’t take.",

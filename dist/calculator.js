@@ -55,13 +55,13 @@ function main() {
         console.log("🧮 Welcome to Smart Calculator");
         const operation = (yield askQuestion("Choose operation (add / subtract / multiply / divide): ")).toLowerCase();
         if (!["add", "subtract", "multiply", "divide"].includes(operation)) {
-            console.log("❌ Invalid operation.");
+            console.log(" Invalid operation.");
             rl.close();
             return;
         }
         const count = parseInt(yield askQuestion("How many numbers? "));
         if (isNaN(count) || count < 2) {
-            console.log("❌ You must enter at least 2 numbers.");
+            console.log(" You must enter at least 2 numbers.");
             rl.close();
             return;
         }
@@ -69,7 +69,7 @@ function main() {
         for (let i = 0; i < count; i++) {
             const num = parseFloat(yield askQuestion(`Enter number ${i + 1}: `));
             if (isNaN(num)) {
-                console.log("❌ Invalid number.");
+                console.log(" Invalid number.");
                 rl.close();
                 return;
             }
@@ -90,7 +90,7 @@ function main() {
                 result = numbers.reduce((a, b) => a / b);
                 break;
         }
-        console.log(`✅ Result: ${result}`);
+        console.log(`Result: ${result}`);
         rl.close();
     });
 }
